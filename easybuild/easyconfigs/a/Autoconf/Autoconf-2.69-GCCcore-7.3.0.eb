@@ -26,7 +26,7 @@ builddependencies = [
 
 dependencies = [
     ('M4', '1.4.18'),
-    ('Perl', '5.26.1'),
+    ('Perl', '5.28.0'),
 ]
 
 sanity_check_paths = {

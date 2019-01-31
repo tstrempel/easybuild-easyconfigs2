@@ -22,4 +22,11 @@ builddependencies = [
     ('zlib', '1.2.11'),
 ]
 
+hiddendependencies = [
+    ('flex', '2.6.4'),
+    ('Bison', '3.0.4'),
+    # zlib required, but being linked in statically, so not a runtime dep
+    ('zlib', '1.2.11'),
+]
+
 moduleclass = 'tools'

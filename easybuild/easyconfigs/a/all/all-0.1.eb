@@ -1,0 +1,91 @@
+easyblock = 'Bundle'
+
+name = 'all'
+version = '0.1'
+
+homepage = 'git.ufz.de'
+
+description = """
+Used to install all needed software modules at the same time.
+"""
+
+toolchain = {'name': 'dummy', 'version': ''}
+
+dependencies = [
+    ('foss', '2018a'),
+    ('foss', '2018b'),
+
+    ('Anaconda2', '5.3.0'),
+    ('Anaconda3', '5.3.0'), 
+
+    #TODO ('CDO', '1.9.5', '', ('foss', '2018a')),
+    #TODO ('CDO', '1.9.5', '', ('foss', '2018b')),
+
+    #TODO LICENSE ('ENVI', '?'),
+
+    #TODO ('GAMESS-US, '20180214-R1', '', ('foss', '2018a')),
+    #TODO ('GAMESS-US, '20180214-R1', '', ('foss', '2018b')),
+    ('GDAL', '2.2.3', '-Python-2.7.14', ('foss', '2018a')),
+    ('GDAL', '2.2.3', '-Python-2.7.15', ('foss', '2018b')),
+    ('GDAL', '2.2.3', '-Python-3.6.4', ('foss', '2018a')),
+    ('GDAL', '2.2.3', '-Python-3.6.6', ('foss', '2018b')),
+    ('GEOS', '3.6.2', '-Python-2.7.14', ('foss', '2018a')),
+    ('GEOS', '3.6.2', '-Python-2.7.15', ('foss', '2018b')),
+    ('GEOS', '3.6.2', '-Python-3.6.4', ('foss', '2018a')),
+    ('GEOS', '3.6.2', '-Python-3.6.6', ('foss', '2018b')),
+
+    #TODO ('HDF', '4.?', '', ('foss', '2018a')),
+    #TODO ('HDF', '4.?', '', ('foss', '2018b')),
+    #TODO ('HDF-EOS2', '?', '', ('foss', '2018a')),
+    #TODO ('HDF-EOS2', '?', '', ('foss', '2018b')),
+    #TODO ('HDF-EOS5, '?', '', ('foss', '2018a')),
+    #TODO ('HDF-EOS5, '?', '', ('foss', '2018b')),
+    #TODO hdf4-nonetcdf
+    ('HDF5', '1.10.1', '', ('foss', '2018a')),
+    ('HDF5', '1.10.2', '', ('foss', '2018b')),
+    
+    #TODO LICENSE ('IDL', ''),
+
+    #TODO ('JAGS', '4.3.0', '', ('foss', '2018a')),
+    #TODO ('JAGS', '4.3.0', '', ('foss', '2018b')),
+    ('Java', '1.8'), # Wrapper for the most recent Java version 
+   
+    #TODO ('NCL', '6.5.0', '', ('foss', '2018a')),
+    #TODO ('NCL', '6.5.0', '', ('foss', '2018b')), 
+    #TODO ('NCO', '4.7.8', '', ('foss', '2018a')),
+    #TODO ('NCO', '4.7.8', '', ('foss', '2018b')),
+    #TODO ('ncview', '2.1.7', '', ('foss', '2018a')),
+    #TODO ('ncview', '2.1.7', '', ('foss', '2018b')),
+    ('netCDF', '4.6.0', '', ('foss', '2018a')),
+    ('netCDF', '4.6.1', '', ('foss', '2018b')),
+    #TODO ('netCDF-C++4', '4.3.0', '', ('foss', '2018a')),
+    ('netCDF-C++4', '4.3.0', '', ('foss', '2018b')),
+    ('netCDF-Fortran', '4.4.4', '', ('foss', '2018a')),
+    ('netCDF-Fortran', '4.4.4', '', ('foss', '2018b')),
+    
+    #TODO('oracle-client', '?'),
+    
+    ('PROJ', '5.0.0', '', ('foss', '2018a')),
+    ('PROJ', '5.0.0', '', ('foss', '2018b')),
+    ('ParaView', '5.4.1', '-mpi', ('foss', '2018a')),
+    ('ParaView', '5.4.1', '-mpi', ('foss', '2018b')),
+    ('Python', '2.7.14', '', ('foss', '2018a')),
+    ('Python', '2.7.15', '', ('foss', '2018b')),
+    ('Python', '3.6.4', '', ('foss', '2018a')),
+    ('Python', '3.6.6', '', ('foss', '2018b')),
+    
+    ('R', '3.4.4', '-X11-20180131', ('foss', '2018a')),
+    ('R', '3.5.1', '', ('foss', '2018b')),
+    #TODO ('RStudio, '?'),    
+
+    #TODO ('SYMPHONY', '5.6', '', ('foss': '2018a)),
+    #TODO ('SYMPHONY', '5.6', '', ('foss', '2018b'),
+    #TODO ('Sen2Cor', '2.5.5', '', ('foss', '2018a'),
+    #TODO ('Sen2Cor', '2.5.5', '', ('foss', '2018b'),
+    ('Szip', '2.1.1', '', ('GCCcore', '6.4.0')),
+    ('Szip', '2.1.1', '', ('GCCcore', '7.3.0')),
+    
+    #TODO LICENSE ('TURBOMOLE', '7.3'),
+]
+
+moduleclass = 'tools'

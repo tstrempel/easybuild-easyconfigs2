@@ -26,4 +26,10 @@ dependencies = [
     ('M4', '1.4.18'),
 ]
 
+hiddendependencies = [
+    ('Bison', '3.0.4'),
+    ('help2man', '1.47.4'),
+    ('M4', '1.4.18'),
+]
+
 moduleclass = 'lang'

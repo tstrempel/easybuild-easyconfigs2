@@ -18,6 +18,8 @@ toolchain = {'name': 'dummy', 'version': ''}
 sources = [SOURCE_TAR_GZ]
 source_urls = [GNU_SOURCE]
 
+checksums = ['ff942af0e438ced4a8b0ea4b0b6e0d6d657157c5e2364de57baa279c1c125c43',]
+
 dependencies = [('ncurses', '6.0')]
 
 hiddendependencies = [('ncurses', '6.0')]

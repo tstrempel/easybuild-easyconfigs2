@@ -20,6 +20,8 @@ source_urls = [GNU_SOURCE]
 
 dependencies = [('ncurses', '6.0')]
 
+hiddendependencies = [('ncurses', '6.0')]
+
 configopts = '--without-emacs --with-included-libxml --without-xz --without-bzip2'
 
 sanity_check_paths = {

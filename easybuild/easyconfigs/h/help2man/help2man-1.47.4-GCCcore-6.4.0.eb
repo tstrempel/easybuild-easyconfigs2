@@ -21,6 +21,10 @@ builddependencies = [
     ('binutils', '2.28', '', True),
 ]
 
+hiddendependencies = [
+    ('binutils', '2.28', '', True),
+]
+
 sanity_check_paths = {
     'files': ['bin/help2man'],
     'dirs': [],

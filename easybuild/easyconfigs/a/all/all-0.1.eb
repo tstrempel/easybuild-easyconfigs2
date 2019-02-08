@@ -18,8 +18,8 @@ dependencies = [
     ('Anaconda2', '5.3.0'),
     ('Anaconda3', '5.3.0'), 
 
-    #TODO ('CDO', '1.9.5', '', ('foss', '2018a')),
-    #TODO ('CDO', '1.9.5', '', ('foss', '2018b')),
+    ('CDO', '1.9.5', '', ('foss', '2018a')),
+    ('CDO', '1.9.5', '', ('foss', '2018b')),
 
     #TODO LICENSE ('ENVI', '?'),
 
@@ -34,8 +34,8 @@ dependencies = [
     ('GEOS', '3.6.2', '-Python-3.6.4', ('foss', '2018a')),
     ('GEOS', '3.6.2', '-Python-3.6.6', ('foss', '2018b')),
 
-    #TODO ('HDF', '4.?', '', ('foss', '2018a')),
-    #TODO ('HDF', '4.?', '', ('foss', '2018b')),
+    ('HDF', '4.2.14', '', ('foss', '2018a')),
+    ('HDF', '4.2.14', '', ('foss', '2018b')),
     #TODO ('HDF-EOS2', '?', '', ('foss', '2018a')),
     #TODO ('HDF-EOS2', '?', '', ('foss', '2018b')),
     #TODO ('HDF-EOS5, '?', '', ('foss', '2018a')),
@@ -46,19 +46,19 @@ dependencies = [
     
     #TODO LICENSE ('IDL', ''),
 
-    #TODO ('JAGS', '4.3.0', '', ('foss', '2018a')),
-    #TODO ('JAGS', '4.3.0', '', ('foss', '2018b')),
+    ('JAGS', '4.3.0', '', ('foss', '2018a')),
+    ('JAGS', '4.3.0', '', ('foss', '2018b')),
     ('Java', '1.8'), # Wrapper for the most recent Java version 
    
     #TODO ('NCL', '6.5.0', '', ('foss', '2018a')),
     #TODO ('NCL', '6.5.0', '', ('foss', '2018b')), 
-    #TODO ('NCO', '4.7.8', '', ('foss', '2018a')),
-    #TODO ('NCO', '4.7.8', '', ('foss', '2018b')),
+    ('NCO', '4.7.6', '', ('foss', '2018a')),
+    ('NCO', '4.7.8', '', ('foss', '2018b')),
     #TODO ('ncview', '2.1.7', '', ('foss', '2018a')),
     #TODO ('ncview', '2.1.7', '', ('foss', '2018b')),
     ('netCDF', '4.6.0', '', ('foss', '2018a')),
     ('netCDF', '4.6.1', '', ('foss', '2018b')),
-    #TODO ('netCDF-C++4', '4.3.0', '', ('foss', '2018a')),
+    ('netCDF-C++4', '4.3.0', '', ('foss', '2018a')),
     ('netCDF-C++4', '4.3.0', '', ('foss', '2018b')),
     ('netCDF-Fortran', '4.4.4', '', ('foss', '2018a')),
     ('netCDF-Fortran', '4.4.4', '', ('foss', '2018b')),

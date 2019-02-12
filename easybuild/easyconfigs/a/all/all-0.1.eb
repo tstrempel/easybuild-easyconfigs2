@@ -36,11 +36,12 @@ dependencies = [
 
     ('HDF', '4.2.14', '', ('foss', '2018a')),
     ('HDF', '4.2.14', '', ('foss', '2018b')),
-    #TODO ('HDF-EOS2', '?', '', ('foss', '2018a')),
-    #TODO ('HDF-EOS2', '?', '', ('foss', '2018b')),
-    #TODO ('HDF-EOS5, '?', '', ('foss', '2018a')),
-    #TODO ('HDF-EOS5, '?', '', ('foss', '2018b')),
-    #TODO hdf4-nonetcdf
+    ('HDF', '4.2.14', '-nonetcdf', ('foss', '2018a')),
+    ('HDF', '4.2.14', '-nonetcdf', ('foss', '2018b')),
+    ('HDF-EOS', '2.20', '', ('foss', '2018a')),
+    ('HDF-EOS', '2.20', '', ('foss', '2018b')),
+    ('HDF-EOS5', '1.16', '', ('foss', '2018a')),
+    ('HDF-EOS5', '1.16', '', ('foss', '2018b')),
     ('HDF5', '1.10.1', '', ('foss', '2018a')),
     ('HDF5', '1.10.2', '', ('foss', '2018b')),
     

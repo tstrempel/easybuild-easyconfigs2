@@ -19,6 +19,10 @@ builddependencies = [
     ('binutils', '2.30', '', True),
 ]
 
+hiddendependencies = [
+    ('binutils', '2.30', '', True),
+]
+
 sanity_check_paths = {
     'files': ['bin/%s' % x for x in ['bison', 'yacc']] + [('lib/liby.a', 'lib64/liby.a')],
     'dirs': [],

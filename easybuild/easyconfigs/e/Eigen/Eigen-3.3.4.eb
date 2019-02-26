@@ -24,4 +24,6 @@ builddependencies = [
     ('CMake', '3.11.1', '-GCCcore-6.4.0'),
 ]
 
+hiddendependencies = [('CMake', '3.9.6')]
+
 moduleclass = 'math'

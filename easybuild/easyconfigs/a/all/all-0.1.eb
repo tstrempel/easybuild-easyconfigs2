@@ -51,8 +51,8 @@ dependencies = [
     ('JAGS', '4.3.0', '', ('foss', '2018b')),
     ('Java', '1.8'), # Wrapper for the most recent Java version 
    
-    #TODO ('NCL', '6.5.0', '', ('foss', '2018a')),
-    #TODO ('NCL', '6.5.0', '', ('foss', '2018b')), 
+    ('NCL', '6.5.0', '', ('foss', '2018a')),
+    ('NCL', '6.5.0', '', ('foss', '2018b')), 
     ('NCO', '4.7.6', '', ('foss', '2018a')),
     ('NCO', '4.7.8', '', ('foss', '2018b')),
     #TODO ('ncview', '2.1.7', '', ('foss', '2018a')),
@@ -64,7 +64,7 @@ dependencies = [
     ('netCDF-Fortran', '4.4.4', '', ('foss', '2018a')),
     ('netCDF-Fortran', '4.4.4', '', ('foss', '2018b')),
     
-    #TODO('oracle-client', '?'),
+    ('Oracle', '12.1.0.2.0'),
     
     ('PROJ', '5.0.0', '', ('foss', '2018a')),
     ('PROJ', '5.0.0', '', ('foss', '2018b')),
@@ -77,12 +77,13 @@ dependencies = [
     
     ('R', '3.4.4', '-X11-20180131', ('foss', '2018a')),
     ('R', '3.5.1', '', ('foss', '2018b')),
-    #TODO ('RStudio, '?'),    
+    #TODO ('RStudio, '?', '', ('foss', '2018a')),
+    #TODO ('RStudio, '?', '', ('foss', '2018b')),    
 
-    #TODO ('SYMPHONY', '5.6', '', ('foss': '2018a)),
-    #TODO ('SYMPHONY', '5.6', '', ('foss', '2018b'),
-    #TODO ('Sen2Cor', '2.5.5', '', ('foss', '2018a'),
-    #TODO ('Sen2Cor', '2.5.5', '', ('foss', '2018b'),
+    ('SYMPHONY', '5.6.16', '', ('foss', '2018a')),
+    ('SYMPHONY', '5.6.16', '', ('foss', '2018b')),
+    #TODO ('Sen2Cor', '2.5.5', '', ('foss', '2018a')),
+    #TODO ('Sen2Cor', '2.5.5', '', ('foss', '2018b')),
     ('Szip', '2.1.1', '', ('GCCcore', '6.4.0')),
     ('Szip', '2.1.1', '', ('GCCcore', '7.3.0')),
     

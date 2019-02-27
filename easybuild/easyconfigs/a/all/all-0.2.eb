@@ -1,0 +1,25 @@
+easyblock = 'Bundle'
+
+name = 'all'
+version = '0.2'
+
+homepage = 'git.ufz.de'
+
+description = """
+Used to install all needed software modules at the same time.
+"""
+
+toolchain = {'name': 'dummy', 'version': ''}
+
+dependencies = [
+    ('foss', '2018a'),
+    ('foss', '2018b'),
+
+    ('grib_api', '1.24.0', '', ('foss', '2018a')),
+    ('grib_api', '1.24.0', '', ('foss', '2018b')),   
+ 
+    ('OpenFOAM', '5.0-20180108', '', ('foss', '2018a')),
+    ('OpenFOAM', '6', '', ('foss', '2018b')),
+]
+
+moduleclass = 'tools'

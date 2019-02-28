@@ -17,9 +17,15 @@ dependencies = [
 
     ('grib_api', '1.24.0', '', ('foss', '2018a')),
     ('grib_api', '1.24.0', '', ('foss', '2018b')),   
+
+    ('libsodium', '1.0.16', '', ('GCCcore', '6.4.0')),
+    ('libsodium', '1.0.16', '', ('GCCcore', '7.3.0')),
  
     ('OpenFOAM', '5.0-20180108', '', ('foss', '2018a')),
     ('OpenFOAM', '6', '', ('foss', '2018b')),
+
+    ('PETSc', '3.9.3', '', ('foss', '2018a')),
+    ('PETSc', '3.9.3', '', ('foss', '2018b')),
 ]
 
 moduleclass = 'tools'

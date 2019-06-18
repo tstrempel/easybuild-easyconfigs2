@@ -14,6 +14,10 @@ toolchain = SYSTEM
 source_urls = ['http://xcb.freedesktop.org/dist/']
 sources = [SOURCELOWER_TAR_GZ]
 
+checksums = [
+	'424ac05f279fb9aab0139e982c81e6d6', 	# xcb-proto-1.1.tar.gz
+]
+
 allow_system_deps = [('Python', SYS_PYTHON_VERSION)]
 
 local_pyshortver = '.'.join(SYS_PYTHON_VERSION.split('.')[0:2])

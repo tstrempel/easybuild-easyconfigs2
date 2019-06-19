@@ -15,7 +15,7 @@ source_urls = ['http://xcb.freedesktop.org/dist/']
 sources = [SOURCELOWER_TAR_GZ]
 
 checksums = [
-	'424ac05f279fb9aab0139e982c81e6d6', 	# xcb-proto-1.1.tar.gz
+	'c8c6cb72c84f58270f4db1f39607f66a', 	# xcb-proto-1.11.tar.gz
 ]
 
 allow_system_deps = [('Python', SYS_PYTHON_VERSION)]

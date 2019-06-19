@@ -1,0 +1,8 @@
+easyblock = 'Bundle'
+
+name = 'uge'
+version = '8.5.5'
+versionsuffix = '-easybuild'
+
+homepage = 'http://www.univa.com/products/'
+desciption = """The Univa Grid Engine is a distributed resource management system."""

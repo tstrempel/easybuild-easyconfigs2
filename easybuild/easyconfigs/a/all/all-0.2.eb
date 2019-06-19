@@ -29,6 +29,9 @@ dependencies = [
 
     ('PETSc', '3.9.3', '', ('foss', '2018a')),
     ('PETSc', '3.9.3', '', ('foss', '2018b')),
+	
+    ('RStan', '2.18.2', '-R-3.4.4', ('foss', '2018a')),
+    ('RStan', '2.18.2', '-R-3.5.1', ('foss', '2018b')),
 
     #TODO ('TensorFlow', '1.8.0', '-Python-3.6.4', ('foss', '2018a')),
     #TODO ('TensorFlow', '1.8.0', '-Python-3.6.4', ('fosscuda', '2018a')),

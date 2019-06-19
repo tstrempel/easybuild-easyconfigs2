@@ -1,0 +1,20 @@
+easyblock = 'Binary'
+
+name = 'Bazel'
+version = '0.23.2'
+
+homepage = 'http://bazel.io/'
+description = """Bazel is a build tool that builds code quickly and reliably. 
+It is used to build the majority of Google's software."""
+
+toolchain = {'name': 'dummy', 'version': '0.23.2'}
+
+sources = ['bazel-%(version)s-installer-linux-x86_64.sh']
+source_urls = ['https://github.com/bazelbuild/bazel/releases/download/%(version)s']
+checksums = ['5e77a0c06b45b12126e51a5fab13c89dfe6a356f86e1d27299dfac8e8746a7e9']
+
+dependencies = [('Java', '1.8', '', True)]
+
+install_cmd = "./bazel-%(version)s-installer-linux-x86_64.sh --prefix=%(installdir)s"
+
+moduleclass = 'devel'

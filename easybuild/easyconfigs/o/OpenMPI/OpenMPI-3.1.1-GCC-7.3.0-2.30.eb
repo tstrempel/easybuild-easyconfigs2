@@ -21,8 +21,19 @@ checksums = [
 
 dependencies = [
     ('zlib', '1.2.11'),
-    ('hwloc', '1.11.10')
+    ('hwloc', '1.11.10'),
+    ('libevent', '2.1.8'),
 ]
+
+configopts = '--enable-shared --with-verbs=/usr --with-psm2=/usr --with-psm=/usr '
+configopts += '--enable-mpirun-prefix-by-default '  # suppress failure modes in relation to mpirun path
+configopts += '--with-hwloc=$EBROOTHWLOC '  # hwloc support
+
+# uge
+configopts += '--with-sge '
+
+# supress orted start failures
+configopts += '--enable-orterun-prefix-by-default --with-libevent=$EBROOTLIBEVENT '
 
 # to enable SLURM integration (site-specific)
 # configopts = '--with-slurm --with-pmi=/usr/include/slurm --with-pmi-libdir=/usr'

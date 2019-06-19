@@ -18,4 +18,6 @@ checksums = [
 builddependencies = [('binutils', '2.30')]
 dependencies = [('Java', '1.8', '', True)]
 
+modextravars = {'JAVA_TOOL_OPTIONS': '-Xmx=31G'}
+
 moduleclass = 'devel'

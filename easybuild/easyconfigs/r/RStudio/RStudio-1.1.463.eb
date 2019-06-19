@@ -1,0 +1,17 @@
+easyblock = 'PackedBinary'
+
+name = 'RStudio'
+version = '1.1.463'
+
+homepage = 'https://www.rstudio.com/products/rstudio/'
+description = """RStudio is an integrated development environment (IDE) for R. It includes a console, syntax-highlighting editor that supports direct code execution, as well as tools for plotting, history, debugging and workspace management."""
+
+toolchain = {'name': 'dummy', 'version': ''}
+
+sources = ['rstudio-%(version)s-x86_64-fedora.tar.gz']
+checksums = ['c129b33d051712adb1a35b6dc346f934025a8bffeebd17c64d353a572cdacaed']
+
+sanity_check_paths = {
+    'files': [],
+    'dirs': ['bin'],
+}

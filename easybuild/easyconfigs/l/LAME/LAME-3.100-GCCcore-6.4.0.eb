@@ -16,6 +16,7 @@ toolchain = {'name': 'GCCcore', 'version': '6.4.0'}
 
 sources = [SOURCELOWER_TAR_GZ]
 source_urls = ['https://sourceforge.net/projects/lame/files/lame/%(version_major_minor)s/']
+checksums = ['ddfe36cab873794038ae2c1210557ad34857a4b6bdc515785d1da9e175b1da1e']
 
 builddependencies = [
     # use same binutils version that was used when building GCCcore toolchain

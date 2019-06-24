@@ -14,6 +14,7 @@ source_urls = [
     'http://download.videolan.org/pub/videolan/x265/',
 ]
 sources = ['%(name)s_%(version)s.tar.gz']
+checksums = ['1bf0036415996af841884802161065b9e6be74f5f6808ac04831363e2549cdbf']
 
 builddependencies = [
     # use same binutils version that was used when building GCCcore toolchain

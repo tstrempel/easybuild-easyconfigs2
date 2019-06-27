@@ -1212,8 +1212,8 @@ exts_list = [
     ('spatstat', '1.55-0', {
         'checksums': ['6392b947a2c970dc3d1787d077398c67e0b8ab053061e4d8a4ad12de3ee0b716'],
     }),
-    ('rgdal', '1.2-16', {
-        'checksums': ['017fefea4f9a6d4540d128c707197b7025b55e4aff98fc763065366b025b03c9'],
+    ('rgdal', '1.3-4', {
+        'checksums': ['9dab55eca80e9df4982ee91bfcddde8195187b41120a824e27e0732c4c2575da'],
     }),
     ('gdalUtils', '2.0.1.7', {
         'checksums': ['931138a03b37678f47a41a27dca4ba1938bed07a8a3e869f42feaa76aa380c59'],
@@ -1896,3 +1896,4 @@ exts_list = [
 ]
 
 moduleclass = 'lang'
+

@@ -26,13 +26,13 @@ sources = [SOURCELOWER_TAR_GZ]
 source_urls = ['http://apps.fz-juelich.de/scalasca/releases/scalasca/%(version_major_minor)s/dist']
 
 checksums = [
-    'de782c8b6ecfce0e16a4b143ba7a9b5a',    # scalasca-2.3.tar.gz
+    '7dfa01e383bfb8a4fd3771c9ea98ff43772e415009d9f3c5f63b9e05f2dde0f6',    # scalasca-2.5.tar.gz
 ]
 
 dependencies = [
     ('Cube', '4.3.4'),
-    ('OTF2', '2.0'),
-    ('Score-P', '2.0.1')
+    ('OTF2', '2.1.1'),
+    ('Score-P', '5.0')
 ]
 
 sanity_check_paths = {

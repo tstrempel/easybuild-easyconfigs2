@@ -31,8 +31,8 @@ checksums = [
 
 dependencies = [
     ('Cube', '4.3.4'),
-    ('OTF2', '2.0'),
-    ('Score-P', '2.0.1')
+    ('OTF2', '2.1.1'),
+    ('Score-P', '5.0')
 ]
 
 sanity_check_paths = {

@@ -28,7 +28,7 @@ checksums = [
     'bafe0ac08e0a13e71568e5774dc83bd305d907159b4ceeb53d2e9f6e29462754',  # otf2-2.0.tar.gz
 ]
 
-builddependencies = [('SIONlib', '1.7.1', '-tools')]
+builddependencies = [('SIONlib', '1.7.4', '-tools')]
 
 configopts = '--enable-shared'
 

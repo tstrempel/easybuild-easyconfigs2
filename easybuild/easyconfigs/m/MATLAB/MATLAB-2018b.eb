@@ -11,15 +11,16 @@ toolchain = SYSTEM
 # be sure to copy both DVD content to the SAME directory, 
 # including the hidden files, especially .dvd1 and .dvd2 
 sources = [SOURCELOWER_TAR_GZ]
+checksums = ['bc0ac4f0c4a9baca24041cd268a58afdb8c1f888d4d1c648dd27144fb2f40601']
 
 dependencies = [('Java', '1.8')]
 
 # Uncomment and modify the following variables if needed 
 # for installation with floating license server
 
-# license_server = 'my-license-server'
-# license_server_port = '1234'
-# key = '00000-00000-00000-00000-00000-00000-00000-00000-00000-00000-00000-00000'
+license_server = 'license.intranet.ufz.de'
+license_server_port = '27004'
+key = '06599-09813-03563-20943-10404-25630-62151-22007'
 # modextravars = {'LM_LICENSE_FILE': '%s@%s' % (license_server_port, license_server)}
 
 moduleclass = 'math'

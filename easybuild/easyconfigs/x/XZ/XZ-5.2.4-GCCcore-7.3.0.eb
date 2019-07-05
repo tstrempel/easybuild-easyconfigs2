@@ -13,7 +13,7 @@ sources = [SOURCELOWER_TAR_BZ2]
 patches = ['XZ-5.2.2_compat-libs.patch']
 checksums = [
     '3313fd2a95f43d88e44264e6b015e7d03053e681860b0d5d3f9baca79c57b7bf',  # xz-5.2.4.tar.bz2
-    '578da3ea2ddb551972891a60fe31478b16a516d6ea8b6aa3af89e1d558adb703',  # XZ-5.2.2_compat-libs.patch
+    '55e244695a9b065fa1b69b4b07cfb728c6c209004dc34ca057b4f6dcebd0e173',  # XZ-5.2.2_compat-libs.patch
 ]
 
 builddependencies = [

@@ -24,8 +24,20 @@ osdependencies = [('libibverbs-dev', 'libibverbs-devel', 'rdma-core-devel')]
 
 dependencies = [
     ('zlib', '1.2.11'),
-    ('hwloc', '1.11.10')
+    ('hwloc', '1.11.10'),
+    ('libevent', '2.1.8'),
 ]
+
+configopts = '--enable-shared --with-psm2=/usr '
+configopts += '--enable-mpirun-prefix-by-default '  # suppress failure modes in relation to mpirun path
+configopts += '--with-hwloc=$EBROOTHWLOC '  # hwloc support
+configopts += '--with-cuda=$CUDA_HOME '     # CUDA-aware build; N.B. --disable-dlopen is incompatible
+
+# uge
+configopts += '--with-sge '
+
+# supress orted start failures
+configopts += '--enable-orterun-prefix-by-default --with-libevent=$EBROOTLIBEVENT '
 
 # to enable SLURM integration (site-specific)
 # configopts = '--with-slurm --with-pmi=/usr/include/slurm --with-pmi-libdir=/usr'

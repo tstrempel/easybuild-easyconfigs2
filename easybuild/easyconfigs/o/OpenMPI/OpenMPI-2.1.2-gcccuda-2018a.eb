@@ -36,8 +36,8 @@ configopts += '--enable-orterun-prefix-by-default --with-libevent=$EBROOTLIBEVEN
 # to enable SLURM integration (site-specific)
 # configopts += '--with-slurm --with-pmi=/usr/include/slurm --with-pmi-libdir=/usr'
 
-# needed for --with-verbs
-osdependencies = [('libibverbs-dev', 'libibverbs-devel', 'rdma-core-devel')]
+# needed for --with-psm2
+osdependencies = [('libpsm2-devel')]
 
 libs = ["mpi_mpifh", "mpi", "ompitrace", "open-pal", "open-rte"]
 sanity_check_paths = {

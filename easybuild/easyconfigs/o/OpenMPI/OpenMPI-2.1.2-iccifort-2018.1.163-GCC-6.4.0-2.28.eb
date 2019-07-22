@@ -16,7 +16,10 @@ checksums = [
     '662d7ef1d0cd0890d2dc4ecb5243012be29bf6b4003da0f006e7cd2125d40e4c',  # OpenMPI-2.1_fix-ib-query.patch
 ]
 
-dependencies = [('hwloc', '1.11.8')]
+dependencies = [
+    ('hwloc', '1.11.8'),
+    ('libevent', '2.1.8'), 
+]
 
 configopts = '--enable-shared --enable-mpi-thread-multiple --with-psm2=/usr '
 configopts += '--enable-mpirun-prefix-by-default '  # suppress failure modes in relation to mpirun path
@@ -27,11 +30,10 @@ configopts += '--without-ucx '  # hard disable UCX, to dance around bug (https:/
 configopts += '--with-sge '
     
 # supress orted start failures 
-configopts += '--enable-orterun-prefix-by-default ' 
+configopts += '--enable-orterun-prefix-by-default --with-libevent=$EBROOTLIBEVENT ' 
 
-
-# needed for --with-verbs
-osdependencies = [('libibverbs-dev', 'libibverbs-devel', 'rdma-core-devel')]
+# needed for --with-psm2
+osdependencies = [('libpsm2-devel')]
 
 local_libs = ["mpi_mpifh", "mpi", "ompitrace", "open-pal", "open-rte"]
 sanity_check_paths = {

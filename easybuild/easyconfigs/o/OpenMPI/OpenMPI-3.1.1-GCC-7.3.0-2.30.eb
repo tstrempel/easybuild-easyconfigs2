@@ -19,6 +19,9 @@ checksums = [
     '945d19eb583af1e4d2ddcb40bafe505352244635c812308d1c77ad1db2811538',
 ]
 
+# needed for --with-psm2
+osdependencies = [('libpsm2-devel')]
+
 dependencies = [
     ('zlib', '1.2.11'),
     ('hwloc', '1.11.10'),

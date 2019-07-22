@@ -1,3 +1,5 @@
+easyblock = 'EB_OpenCV_broadwell'
+
 name = 'OpenCV'
 version = '3.4.1'
 versionsuffix = '-Python-%(pyver)s'

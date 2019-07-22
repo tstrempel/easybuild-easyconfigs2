@@ -30,7 +30,7 @@ dependencies = [
     ('libevent', '2.1.8')
 ]
 
-configopts = '--enable-shared --with-verbs=/usr --with-psm=/usr --with-psm2=/usr  '
+configopts = '--enable-shared --with-psm2=/usr  '
 configopts += '--enable-mpirun-prefix-by-default '  # suppress failure modes in relation to mpirun path
 configopts += '--with-hwloc=$EBROOTHWLOC '  # hwloc support
 

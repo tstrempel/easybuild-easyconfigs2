@@ -34,7 +34,7 @@ checksums = [
 
 skipsteps = ['configure']
 
-buildopts = 'BINARY=64 USE_THREAD=1 USE_OPENMP=1 CC="$CC" FC="$F77"'
+buildopts = 'TARGET=HASWELL BINARY=64 USE_THREAD=1 USE_OPENMP=1 CC="$CC" FC="$F77"'
 installopts = "USE_THREAD=1 USE_OPENMP=1 PREFIX=%(installdir)s"
 
 # extensive testing can be enabled by uncommenting the line below

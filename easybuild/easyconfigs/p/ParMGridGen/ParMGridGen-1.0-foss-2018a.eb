@@ -1,0 +1,32 @@
+easyblock = 'MakeCp'
+
+name = 'ParMGridGen'
+version = '1.0'
+
+homepage = 'http://www-users.cs.umn.edu/~moulitsa/software.html'
+description = """ParMGridGen is an MPI-based parallel library that is based on the serial package MGridGen,
+ that implements (serial) algorithms for obtaining a sequence of successive coarse grids that are well-suited
+ for geometric multigrid methods."""
+
+toolchain = {'name': 'foss', 'version': '2018a'}
+toolchainopts = {'usempi': True, 'pic': True}
+
+source_urls = [
+    'https://github.com/mrklein/ParMGridGen/archive/'
+]
+sources = ['v0.0.2.tar.gz']
+# patches = ['ParMGridGen-1.0_malloc_include.patch']
+checksums = [
+    'b3875d877def79c5fe37df0c9b1a43a47b3a99e8714f654a44d2010ce338ea93',  # ParMGridGen-1.0.tar.gz
+#    '3e0d72f82b3b56cbfcb1e3c9afc6594eb25316a0faeb49237faa8d969b4daeaa',  # ParMGridGen-1.0_malloc_include.patch
+]
+
+buildopts = 'parallel make=make CC="$CC" PARCC="$CC" PARLD="$CC" COPTIONS="$CFLAGS" LDOPTIONS="$CFLAGS" BINDIR="."'
+
+files_to_copy = [
+    (['MGridGen/Programs/mgridgen', 'ParMGridGen/Programs/parmgridgen'], 'bin'),
+    (['mgridgen.h', 'parmgridgen.h'], 'include'),
+    (['libmgrid.a', 'libparmgrid.a'], 'lib'),
+]
+
+moduleclass = 'math'

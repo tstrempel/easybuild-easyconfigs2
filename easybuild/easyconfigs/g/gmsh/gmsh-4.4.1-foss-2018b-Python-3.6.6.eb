@@ -1,0 +1,39 @@
+easyblock = 'CMakeMake'
+
+name = 'gmsh'
+version = '4.4.1'
+versionsuffix = '-Python-%(pyver)s'
+
+homepage = 'http://geuz.org/gmsh'
+description = """Gmsh is a 3D finite element grid generator with a build-in CAD engine and post-processor."""
+
+toolchain = {'name': 'foss', 'version': '2018b'}
+toolchainopts = {"usempi": True}
+
+source_urls = ['http://gmsh.info/src/']
+sources = ['%(name)s-%(version)s-source.tgz']
+checksums = ['853c6438fc4e4b765206e66a514b09182c56377bb4b73f1d0d26eda7eb8af0dc']
+
+builddependencies = [
+    ('CMake', '3.12.1'),
+    ('SWIG', '3.0.12', versionsuffix),
+]
+
+dependencies = [
+    ('Python', '3.6.6'),
+    ('PETSc', '3.9.3'),
+    ('SLEPc', '3.9.2'),
+]
+
+separate_build_dir = True
+
+configopts = '-DENABLE_FLTK=0 -DENABLE_WRAP_PYTHON=ON -DENABLE_METIS=1'
+
+modextrapaths = {'PYTHONPATH': ['lib64']}
+
+sanity_check_paths = {
+    'files': ['bin/gmsh', 'lib64/gmsh.py'],
+    'dirs': [],
+}
+
+moduleclass = 'math'

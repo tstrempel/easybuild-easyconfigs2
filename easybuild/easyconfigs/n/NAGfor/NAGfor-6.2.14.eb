@@ -13,14 +13,16 @@ sources = [{
     'filename': SOURCE_TGZ,
     'download_filename': 'npl%(version_major)sa%(version_major)s%(version_minor)sna_amd64.tgz'
 }]
-checksums = ['b9af0f16a46f956358be7c7efe6bd658752853ac076f254cc073d441470d4ce3']
+# checksums = ['b9af0f16a46f956358be7c7efe6bd658752853ac076f254cc073d441470d4ce3']
+checksums = ['e22f70f52949c4eb5526229c13920c924af5254d07a584cf54fefecd130fd29c']
 
 extract_sources = True
 
 install_cmd = "INSTALL_TO_BINDIR=%(installdir)s/bin INSTALL_TO_LIBDIR=%(installdir)s/lib "
 install_cmd += "INSTALL_TO_CATMANDIR=%(installdir)s/man INSTALL_TO_MANDIR=%(installdir)s/man ./INSTALLU.sh"
 
-modextravars = {'NAG_KUSARI_FILE': HOME + '/licenses/license.dat'}
+# modextravars = {'NAG_KUSARI_FILE': HOME + '/licenses/license.dat'}
+modextravars = {'NAG_KUSARI_FILE': '/opt/nag/6.2-6223/lib/nag.licence'}
 
 sanity_check_paths = {
     'files': ['bin/dbx90', 'bin/nagfmcheck', 'bin/nagfor'],

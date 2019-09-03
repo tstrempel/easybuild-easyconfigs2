@@ -25,12 +25,9 @@ dependencies = [
 
 builddependencies = [
     ('CMake', '3.10.2'),
-    ('Eigen', '3.3.4', '', True),
+    ('Eigen', '3.3.7', '', True),
 ]
 
-hiddendependencies = [
-    ('Eigen', '3.3.4', '', True),
-]
 
 configopts = "-DOPENGL_INCLUDE_DIR=$EBROOTMESA/include\;$EBROOTLIBGLU/include "
 configopts += "-DOPENGL_gl_LIBRARY=$EBROOTMESA/lib/libGL.%s " % SHLIB_EXT

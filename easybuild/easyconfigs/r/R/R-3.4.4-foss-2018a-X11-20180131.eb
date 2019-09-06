@@ -652,7 +652,7 @@ exts_list = [
         'checksums': ['eaf24be931d762f1ccca4f90e15997719d01005f152160a3d20d858a0bbed92b'],
     }),
     ('Formula', '1.2-3', {
-        'checksums': ['8def4600fb7457d38db8083733477501b54528974aa216e4adf8871bff4aa429'],
+        'checksums': ['1411349b20bd09611a9fd0ee6d15f780c758ad2b0e490e908facb49433823872'],
     }),
     ('acepack', '1.4.1', {
         'checksums': ['82750507926f02a696f6cc03693e8d4a5ee7e92500c8c15a16a9c12addcd28b9'],

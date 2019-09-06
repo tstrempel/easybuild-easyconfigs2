@@ -2120,6 +2120,23 @@ exts_list = [
     ('resample', '0.4', {
         'checksums': ['f0d5f735e1b812612720845d79167a19f713a438fd10a6a3206e667045fd93e5'],
     }),
+
+    # install biomod2 and it's dependencies https://git.ufz.de/it/eve/software/issues/126
+    ('plotmo', '3.5.5', {
+        'checksums': ['ee0c779488dbd5844e50a8e9c753a1036a7e53ed18acea86bb41d869666cb771'],
+    }),
+    ('rasterVis', '0.46', {
+        'checksums': ['bedd788ad558cea2ca4889322ef7503d7598c84a336d69dfafcc6121eac4f253'],
+    }),
+    ('mda', '0.4-10', {
+        'checksums': ['7036bc622a8fea5b2de94fc19e6b64f5f0c27e5d743ae7646e116af08c9de6a5'],
+    }),
+    ('earth', '5.1.1', {
+        'checksums': ['34f6a2d475323f56da89e6cae9162743b87f47ff0e8a547df94b272e0195e237'],
+    }),
+    ('biomod2', '3.3-7.1', {
+        'checksums': ['2c35d482001c791420db1f7aa38fc334f71f1c151bf68f035c9dd39e27b5133d'],
+    }),
 ]
 
 moduleclass = 'lang'

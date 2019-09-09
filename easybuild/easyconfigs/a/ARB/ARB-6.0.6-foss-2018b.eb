@@ -1,0 +1,42 @@
+# Author: Tom Strempel
+# Helmholtz Centre for Environmental Research - UFZ
+# Leipzig, Germany
+
+name = 'ARB'
+version = '6.0.6'
+
+homepage = 'http://www.arb-home.de/'
+description = """The ARB software is a graphically oriented package comprising various tools for sequence database
+handling and data analysis. A central database of processed (aligned) sequences and any type of additional data linked
+to the respective sequence entries is structured according to phylogeny or other user defined criteria."""
+
+toolchain = {'name': 'foss', 'version': '2018b'}
+
+source_urls = ['http://download.arb-home.de/release/%(namelower)s-%(version)s/']
+sources = ['%(namelower)s-%(version)s-source.tgz']
+checksums = [
+    '8b1fc3fd11bbb05aca4731ac8803c004a4f2b6b87c11b543660d07ea349a6c21',  # arb-6.0.6-source.tgz
+    '544d5206a6ccd5c60a5782b6c0696b58a40696694ec666d170d1a8bdbab29e6b',  # ARB_compiler.patch
+]
+
+patches = [
+    'ARB_compiler.patch',
+]
+
+dependencies = [
+    ('libpng', '1.6.34'),
+    ('LibTIFF', '4.0.9'),
+    ('Java', '1.8', '', True),
+    ('lynx', '2.8.9'),
+    ('makedepend', '1.0.5'),
+    ('imake', '1.0.7'),
+    ('X11', '20180604'),
+    ('motif', '2.3.8'),
+    ('Perl', '5.28.0'),
+    ('freeglut', '3.0.0'),
+    ('Sablotron', '1.0.3'),
+    ('libxml2', '2.9.8'),
+    ('GLib', '2.54.3'),
+]
+
+moduleclass = 'bio'

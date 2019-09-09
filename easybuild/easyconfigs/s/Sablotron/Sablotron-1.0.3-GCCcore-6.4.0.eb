@@ -1,0 +1,28 @@
+# Author: Tom Strempel
+# Helmholtz Centre for Environmental Research - UFZ
+# Leipzig, Germany
+
+easyblock = 'ConfigureMake'
+
+name = 'Sablotron'
+version = '1.0.3'
+
+homepage = 'http://sablotron.sourceforge.net/'
+description = """Sablotron XML processor"""
+
+toolchain = {'name': 'GCCcore', 'version': '6.4.0'}
+
+source_urls = [SOURCEFORGE_SOURCE]
+sources = ['Sablot-%(version)s.tar.gz']
+checksums = ['a0c737ada78d0d305a2a964595167e0c6d17ff0afd3b801714768deb681bf362']
+
+dependencies = [('expat', '2.2.5')]
+
+builddependencies = [('binutils', '2.28')]
+
+sanity_check_paths = {
+    'files': ['bin/sabcmd', 'bin/sablot-config', 'include/sablot.h', 'lib/libsablot.a', 'lib/libsablot.%s' % SHLIB_EXT],
+    'dirs': [],
+}
+
+moduleclass = 'data'

@@ -2208,6 +2208,17 @@ exts_list = [
     ('plm', '2.2-0', {
         'checksums': ['7f038532c387d417ea0c86322d873e6a3959a061a490bc506241a95edc50c86a'],
     }),
+
+    # install climwin and it's dependencies https://git.ufz.de/it/eve/software/issues/127
+    ('evd', '2.3-3', {
+        'checksums': ['2fc5ef2e0c3a2a9392425ddd45914445497433d90fb80b8c363877baee4559b4'],
+    }),
+    ('MuMIn', '1.43.6', {
+        'checksums': ['c811ffe278dee9cd79d7a0fe79795b67fff918bcc5ab2f815d691efb69500b3d'],
+    }),
+    ('climwin', '1.2.2', {
+        'checksums': ['1d00d0738a10a9917f32a89641478c1afce8aff8bd52d3d9dac93f5ff7476c0a'],
+    }),
 ]
 
 moduleclass = 'lang'

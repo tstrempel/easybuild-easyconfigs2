@@ -26,11 +26,11 @@ dependencies = [
 
 preconfigopts = 'export CC="$EBROOTHDF5/bin/h5pcc -Df2cFortran" &&'
 
-configopts = "--with-szlib=$EBROOTSZIP"
+configopts = "--with-szlib=$EBROOTSZIP --enable-install-include"
 
 sanity_check_paths = {
     'files': [],
-    'dirs': ['lib'],
+    'dirs': ['lib', 'include'],
 }
 
 moduleclass = 'data'

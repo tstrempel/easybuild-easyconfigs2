@@ -23,11 +23,13 @@ dependencies = [
     ('Python', '3.6.6'),
     ('PETSc', '3.9.3'),
     ('SLEPc', '3.9.2'),
+    ('OCCT', '7.3.0'),
 ]
 
 separate_build_dir = True
 
-configopts = '-DENABLE_FLTK=0 -DENABLE_WRAP_PYTHON=ON -DENABLE_METIS=1'
+configopts  = '-DENABLE_FLTK=0 -DENABLE_WRAP_PYTHON=ON -DENABLE_METIS=1 '
+configopts += '-DENABLE_OCC=1 -DENABLE_OCC_CAF=1 '
 
 modextrapaths = {'PYTHONPATH': ['lib64']}
 

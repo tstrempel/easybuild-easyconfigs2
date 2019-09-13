@@ -26,6 +26,4 @@ builddependencies = [
     ('CMake', '3.12.1'),
 ]
 
-# parallel = 1
-
 moduleclass = "math"

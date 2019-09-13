@@ -2219,6 +2219,11 @@ exts_list = [
     ('climwin', '1.2.2', {
         'checksums': ['1d00d0738a10a9917f32a89641478c1afce8aff8bd52d3d9dac93f5ff7476c0a'],
     }),
+
+    # installed sf for Michael Peichl https://wkdv-support.ufz.de/#ticket/zoom/2782
+    ('sf', '0.7-7', {
+        'checksums': ['d1780cb46a285b30c7cc41cae30af523fbc883733344e53f7291e2d045e150a4'],
+    }),
 ]
 
 moduleclass = 'lang'

@@ -23,6 +23,7 @@ dependencies = [
     ('Python', '3.6.4'),
     ('PETSc', '3.9.3'),
     ('SLEPc', '3.9.2'),
+    ('OCCT', '7.3.0'),
 ]
 
 separate_build_dir = True

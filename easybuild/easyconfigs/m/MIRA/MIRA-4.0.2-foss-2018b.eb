@@ -2,7 +2,6 @@ easyblock = 'ConfigureMake'
 
 name = 'MIRA'
 version = '4.0.2'
-versionsuffix = '-Python-2.7.15'
 
 homepage = 'http://sourceforge.net/p/mira-assembler/wiki/Home/'
 description = """MIRA is a whole genome shotgun and EST sequence assembler for Sanger, 454, Solexa (Illumina),
@@ -37,5 +36,7 @@ sanity_check_paths = {
     'files': ["bin/mira"],
     'dirs': ["bin", "share"],
 }
+
+parallel = 1
 
 moduleclass = 'bio'

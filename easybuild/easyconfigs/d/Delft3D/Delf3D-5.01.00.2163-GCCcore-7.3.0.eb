@@ -1,0 +1,25 @@
+easyblock = 'ConfigureMake'
+
+name = 'Delft3D'
+version = '5.01.00.2163'
+
+homepage = "https://oss.deltares.nl/web/delft3d"
+description = """Delft3D is a world leading 3D modeling suite to investigate hydrodynamics, sediment transport and morphology and water quality for fluvial, estuarine and coastal environments."""
+
+toolchain = {'name': 'GCCcore', 'version': '7.3.0'}
+
+sources = ['delft3d_5.01.00.2163.zip']
+checksums = ['c27b5c5f48229929b878c97b1f1fd6862ad9d1d29e843ee33692a3226319528f']
+
+builddependencies = [
+    ('binutils', '2.30'),
+]
+
+dependencies = [
+    ('expat', '2.2.5'),
+    ('libtool', '2.4.6'),
+]
+
+preconfigopts = "cd %(installdir)s && ./autogen.sh && "
+
+moduleclass = 'geo'

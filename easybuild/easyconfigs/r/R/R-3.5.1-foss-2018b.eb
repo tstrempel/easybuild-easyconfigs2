@@ -14,6 +14,7 @@ builddependencies = [
     ('pkg-config', '0.29.2'),
 ]
 dependencies = [
+    ('Pango', '1.42.4'),
     ('X11', '20180604'),
     ('Mesa', '18.1.1'),
     ('libGLU', '9.0.0'),
@@ -42,6 +43,10 @@ dependencies = [
     ('HDF5', '1.10.2'),  # for hdf5r
     ('UDUNITS', '2.2.26'),  # for units
     ('GSL', '2.5'),  # for RcppGSL
+    ('netCDF', '4.6.1'),  # for ncdf4
+    ('GEOS', '3.6.2', '-Python-3.6.6'),  # for rgeos
+    ('SYMPHONY', '5.6.16'),
+    
     # OS dependency should be preferred if the os version is more recent then this version,
     # it's nice to have an up to date openssl for security reasons
     # ('OpenSSL', '1.0.2h'),
@@ -232,8 +237,8 @@ exts_list = [
     ('checkmate', '1.8.5', {
         'checksums': ['e94d2a3971908ce2a8252a9320ae7e030e0364b0ecd5385ab98e600aca7cd1e0'],
     }),
-    ('Rcpp', '0.12.18', {
-        'checksums': ['fcecd01e53cfcbcf58dec19842b7235a917b8d98988e4003cc090478c5bbd300'],
+    ('Rcpp', '1.0.2', {
+        'checksums': ['ad9338d6fc89dd116a3e2c5ecef1956e4be63b6c6aa1b21b2e5f249d65a5129c'],
     }),
     ('cubature', '1.4', {
         'checksums': ['e4cca932af6255b448ceffe86966cc892379b0b8486d905fb9f84eb1d11aa2c1'],
@@ -364,8 +369,8 @@ exts_list = [
     ('scales', '1.0.0', {
         'checksums': ['0c1f4a14edd336a404da34a3cc71a6a9d0ca2040ba19360c41a79f36e06ca30c'],
     }),
-    ('rlang', '0.2.2', {
-        'checksums': ['c9119420ff0caeb6b0fcee8800e2fb1ec072e291e0e53b8acea3c4cf49420d33'],
+    ('rlang', '0.4.0', {
+        'checksums': ['9748a4a217548bbe5631c18fd88c94811950446f798ff21fb327703aebaa150d'],
     }),
     ('assertthat', '0.2.0', {
         'checksums': ['d73ef79b1e75293ed889a99571b237a95829c099f7da094d4763f83ea6fde5f2'],
@@ -495,8 +500,8 @@ exts_list = [
     ('tidyselect', '0.2.4', {
         'checksums': ['5cb30e56ad5c1ac59786969edc8d542a7a1735a129a474f585a141aefe6a2295'],
     }),
-    ('dplyr', '0.7.6', {
-        'checksums': ['d489cc8b53854ec30737bb7d39b331b67ca35f4275ad19e97420d7a247808330'],
+    ('dplyr', '0.8.3', {
+        'checksums': ['68b4aac65a69ea6390e90991d9c7ce7a011a07e5db439d60cce911a078424c0c'],
     }),
     ('tidyr', '0.8.1', {
         'checksums': ['3d3e2821c3eb711b5eebe26b880e6acfe5444d5dc69fb21761f4cd5953700511'],

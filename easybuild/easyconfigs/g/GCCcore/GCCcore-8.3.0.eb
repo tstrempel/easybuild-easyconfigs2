@@ -40,6 +40,11 @@ builddependencies = [
     ('binutils', '2.32'),
 ]
 
+hiddendependencies = [
+    ('M4', '1.4.18'),
+    ('binutils', '2.32'),
+]
+
 languages = ['c', 'c++', 'fortran']
 
 withisl = True

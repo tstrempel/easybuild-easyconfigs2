@@ -21,6 +21,10 @@ builddependencies = [
     ('M4', '1.4.18'),
 ]
 
+hiddendependencies = [
+    ('M4', '1.4.18'),
+]
+
 sanity_check_paths = {
     'files': ['bin/%s' % x for x in ['bison', 'yacc']] + [('lib/liby.a', 'lib64/liby.a')],
     'dirs': [],

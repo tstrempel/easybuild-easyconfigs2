@@ -18,4 +18,10 @@ builddependencies = [
     ('zlib', '1.2.11'),
 ]
 
+hiddendependencies = [
+    ('flex', '2.6.4'),
+    ('Bison', '3.3.2'),
+    ('zlib', '1.2.11'),
+]
+
 moduleclass = 'tools'

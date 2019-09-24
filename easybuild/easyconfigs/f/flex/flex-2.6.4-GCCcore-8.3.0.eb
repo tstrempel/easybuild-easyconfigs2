@@ -27,6 +27,10 @@ dependencies = [
     ('M4', '1.4.18'),
 ]
 
+hiddendependencies = [
+    ('binutils', '2.32', '', True),
+]
+
 # glibc 2.26 requires _GNU_SOURCE defined to expose reallocarray in the correct
 # header, see https://github.com/westes/flex/issues/241
 preconfigopts = 'export CPPFLAGS="$CPPFLAGS -D_GNU_SOURCE" && '

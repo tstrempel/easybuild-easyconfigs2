@@ -388,6 +388,15 @@ exts_list = [
     ('fansi', '0.3.0', {
         'checksums': ['dd6401d5c91ff4c45d752cceddd5379d1ae39a8a1196f236b0bc0ec6d691b88c'],
     }),
+    ('ellipsis', '0.2.0.1', {
+	'checksums': ['0e6528c5e8016c3617cc1cfcdb5a4bfeb073e0bd5ea76b43e56b0c3208a0a943'],
+    }),
+    ('zeallot', '0.1.0', {
+        'checksums': ['439f1213c97c8ddef9a1e1499bdf81c2940859f78b76bc86ba476cebd88ba1e9'],
+    }),
+    ('vctrs', '0.2.0', {
+        'checksums': ['5bce8f228182ecaa51230d00ad8a018de9cf2579703e82244e0931fe31f20016'],
+    }),
     ('pillar', '1.4.2', {
         'checksums': ['bababb76b6db06dc32ccd947dbad6c164a1749ff5b558c6783ad03570f010825'],
     }),
@@ -2232,15 +2241,6 @@ exts_list = [
     }),
     ('ncdf4', '1.16.1', {
 	'checksums': ['0dde2d6d1e8474f4abd15a61af8a2f7de564f13da00f1a01d7a479ab88587a20'],
-    }),
-    ('ellipsis', '0.2.0.1', {
-	'checksums': ['0e6528c5e8016c3617cc1cfcdb5a4bfeb073e0bd5ea76b43e56b0c3208a0a943'],
-    }),
-    ('zeallot', '0.1.0', {
-        'checksums': ['439f1213c97c8ddef9a1e1499bdf81c2940859f78b76bc86ba476cebd88ba1e9'],
-    }),
-    ('vctrs', '0.2.0', {
-        'checksums': ['5bce8f228182ecaa51230d00ad8a018de9cf2579703e82244e0931fe31f20016'],
     }),
     ('rlist', '0.4.6.1', {
         'checksums': ['bb0148b124997aa4e1c89c6c7cf45927afaf5b23caefcdc5116cfa7caef05c21'],

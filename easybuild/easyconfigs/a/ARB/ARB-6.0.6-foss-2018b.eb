@@ -1,6 +1,4 @@
-# Author: Tom Strempel
-# Helmholtz Centre for Environmental Research - UFZ
-# Leipzig, Germany
+easyblock = 'MakeCp'
 
 name = 'ARB'
 version = '6.0.6'
@@ -37,6 +35,10 @@ dependencies = [
     ('Sablotron', '1.0.3'),
     ('libxml2', '2.9.8'),
     ('GLib', '2.54.3'),
+    ('gnuplot', '5.2.6'),
+    ('libreadline', '7.0'),
 ]
+# make -j 40  all OPENGL=0 V=1 ARB_64=1
+# configure_cmd_prefix = ""
 
 moduleclass = 'bio'

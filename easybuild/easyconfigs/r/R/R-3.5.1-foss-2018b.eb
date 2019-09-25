@@ -400,6 +400,9 @@ exts_list = [
     ('pillar', '1.4.2', {
         'checksums': ['bababb76b6db06dc32ccd947dbad6c164a1749ff5b558c6783ad03570f010825'],
     }),
+    ('pkgconfig', '2.0.2', {
+        'checksums': ['25997754d1adbe7a251e3bf9879bb52dced27dd8b84767d558f0f644ca8d69ca'],
+    }),
     ('tibble', '2.1.3', {
         'checksums': ['9a8cea9e6b5d24a7e9bf5f67ab38c40b2b6489eddb0d0edb8a48a21ba3574e1a'],
     }),
@@ -491,9 +494,6 @@ exts_list = [
     }),
     ('survival', '2.42-6', {
         'checksums': ['e33c44ee95961ff3c1bd1afe040d3059c143a72387d8e47fdbeba61c9d605daf'],
-    }),
-    ('pkgconfig', '2.0.2', {
-        'checksums': ['25997754d1adbe7a251e3bf9879bb52dced27dd8b84767d558f0f644ca8d69ca'],
     }),
     ('bindr', '0.1.1', {
         'checksums': ['7c785ca77ceb3ab9282148bcecf64d1857d35f5b800531d49483622fe67505d0'],

@@ -1,0 +1,36 @@
+easyblock = 'PackedBinary'
+
+name = 'grid-engine-tools'
+version = '0.8.2'
+
+homepage = 'https://github.com/idiv-biodiversity/grid-engine-tools'
+description = """This project is a suite of utility tools for Grid Engine related products. The first targeted version will be the Univa Grid Engine. Others may be included later with support from the community"""
+
+toolchain = SYSTEM
+
+source_urls = ['https://github.com/idiv-biodiversity/grid-engine-tools/archive']
+sources = ['v%(version)s.tar.gz']
+checksums = ['ad43740dc75a1e8836f819cba9ed8841638790675d406cba9d94ed733c873126']
+
+dependencies = [
+    ('Java', '1.8'),
+    ('uge/8.5.5-easybuild', EXTERNAL_MODULE),
+]
+
+buildininstalldir = False
+
+builddependencies = [('sbt', '1.2.8', '-Java-1.8', True)]
+
+extract_sources = True
+preinstallopts = "cd %(builddir)s/grid-engine-tools-%(version)s && PREFIX=%(installdir)s "
+install_cmd = "sbt install"
+
+# configure_step = "cd %(builddir)s/grid-engine-tools-%(version)s && PREFIX=%(installdir)s "
+# build_step = "sbt install"
+
+sanity_check_paths = {
+    'files': [],
+    'dirs': ['bin'], 
+}
+
+moduleclass = 'tools'

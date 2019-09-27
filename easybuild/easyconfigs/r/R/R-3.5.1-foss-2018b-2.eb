@@ -2249,6 +2249,15 @@ exts_list = [
     ('rgeos', '0.5-1', {
         'checksums': ['8408973e7fe5648e39aa53f3d4bfe800638021a146a4e06f86496c0132e05488'],
     }),
+
+    # install Rsymphony and ROracle https://git.ufz.de/it/eve/software/issues/128
+    ('Rsymphony', '0.1-28', {
+	'checksums': ['dd9215974442043fafa44d02994db2530bb06ea28173962f004634b69e27a50b'],
+    }),
+#    ('', '', {
+#
+#    }),
+
 ]
 
 moduleclass = 'lang'

@@ -23,10 +23,7 @@ builddependencies = [('sbt', '1.2.8', '-Java-1.8', True)]
 
 extract_sources = True
 preinstallopts = "cd %(builddir)s/grid-engine-tools-%(version)s && PREFIX=%(installdir)s "
-install_cmd = "sbt install"
-
-# configure_step = "cd %(builddir)s/grid-engine-tools-%(version)s && PREFIX=%(installdir)s "
-# build_step = "sbt install"
+install_cmd = "sbt install && chmod u+x %(installdir)s/bin/* && chmod g+x %(installdir)s/bin/* && chmod o+x %(installdir)s/bin/* "
 
 sanity_check_paths = {
     'files': [],

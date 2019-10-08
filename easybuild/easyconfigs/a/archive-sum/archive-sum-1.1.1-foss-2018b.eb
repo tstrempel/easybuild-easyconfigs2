@@ -1,0 +1,33 @@
+easyblock = 'MesonNinja'
+
+name = 'archive-sum'
+version = '1.1.1'
+
+homepage = 'https://github.com/idiv-biodiversity/archive-sum'
+description = """Generates checksums of files within an archive file without extracting its contents."""
+
+toolchain = {'name': 'foss', 'version': '2018b'}
+
+source_urls = ['https://github.com/idiv-biodiversity/archive-sum/archive']
+sources = ['v%(version)s.tar.gz']
+checksums = ['c786ccd0eb3aba4bfaab5b79df75079e119c3619050c16fc8908c6dcc08ac0cc']
+
+osdependencies = [
+    ('openssl-devel'),
+]
+
+builddependencies = [
+    ('Ninja', '1.8.2'),
+    ('Meson', '0.48.1', '-Python-3.6.6'),
+]
+
+dependencies = [
+    ('libarchive', '3.4.0'),
+]
+
+sanity_check_paths = {
+    'files': [],
+    'dirs': ['bin'],
+}
+
+moduleclass = "tools"

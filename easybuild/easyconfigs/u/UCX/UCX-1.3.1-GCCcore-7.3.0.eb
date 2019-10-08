@@ -23,13 +23,13 @@ builddependencies = [
     ('pkg-config', '0.29.2'),
 ]
 
-osdependencies = [('libibverbs-dev', 'libibverbs-devel', 'rdma-core-devel')]
+osdependencies = [('libpsm2-devel')]
 
 dependencies = [
     ('numactl', '2.0.11'),
 ]
 
-configopts = '--enable-optimizations --enable-cma --enable-mt --with-verbs '
+configopts = '--enable-optimizations --enable-cma --enable-mt --with-psm2 '
 configopts += '--without-java --disable-doxygen-doc '
 
 buildopts = 'V=1'

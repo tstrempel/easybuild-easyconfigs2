@@ -19,9 +19,10 @@ dependencies = [
     ('zlib', '1.2.11'),
     ('hwloc', '1.11.12'),
     ('libevent', '2.1.8'),
+    ('UCX', '1.5.1'),
 ]
 
-configopts = '--enable-shared --enable-mpi-thread-multiple --with-psm2=/usr '
+configopts  = '--enable-shared --with-psm2=/usr '
 configopts += '--enable-mpirun-prefix-by-default '  # suppress failure modes in relation to mpirun path
 configopts += '--with-hwloc=$EBROOTHWLOC '  # hwloc support
 
@@ -29,10 +30,7 @@ configopts += '--with-hwloc=$EBROOTHWLOC '  # hwloc support
 configopts += '--with-sge '
 
 # supress orted start failures
-configopts += '--enable-orterun-prefix-by-default --with-libevent=$EBROOTLIBEVENT '
-
-
-# to enable SLURM integration (site-specific)
-# configopts = '--with-slurm --with-pmi=/usr/include/slurm --with-pmi-libdir=/usr'
+configopts += '--with-libevent=$EBROOTLIBEVENT '
+configopts += '--with-ucx=$EBROOTUCX --enable-mpi-cxx '
 
 moduleclass = 'mpi'

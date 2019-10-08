@@ -1,0 +1,15 @@
+easyblock = 'ConfigureMake'
+
+name = 'libarchive'
+version = '3.4.0'
+
+homepage = 'https://www.libarchive.org/'
+description = """The libarchive project develops a portable, efficient C library that can read and write streaming archives in a variety of formats. It also includes implementations of the common tar, cpio, and zcat command-line tools that use the libarchive library."""
+
+toolchain = {'name': 'GCCcore', 'version': '7.3.0'}
+
+source_urls = ['https://github.com/libarchive/libarchive/releases/download/v%(version)s/']
+sources = [SOURCELOWER_TAR_GZ]
+checksums = ['8643d50ed40c759f5412a3af4e353cffbce4fdf3b5cf321cb72cacf06b2d825e']
+
+moduleclass = "tools"

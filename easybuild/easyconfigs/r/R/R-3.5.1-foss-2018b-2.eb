@@ -2254,6 +2254,21 @@ exts_list = [
     ('Rsymphony', '0.1-28', {
 	'checksums': ['dd9215974442043fafa44d02994db2530bb06ea28173962f004634b69e27a50b'],
     }),
+
+    # install RStan directly
+    ('inline', '0.3.15', {
+        'checksums': ['ff043fe13c1991a3b285bed256ff4a9c0ba10bee764225a34b285875b7d69c68'],
+    }),
+    ('loo', '2.1.0', {
+        'checksums': ['1bf4a1ef85d151577ff96d4cf2a29c9ef24370b0b1eb08c70dcf45884350e87d'],
+    }),
+    ('StanHeaders', '2.18.1', {
+        'checksums': ['ce0d609a7cd11725b1203bdeae92acc54da3a48b8266eb9dbdb9d95b14df9209'],
+    }),
+    ('rstan', version, {
+        'checksums': ['4d75dad95610d5a1d1c89a4ddbaf4326462e4ffe0ad28aed2129f2d9292e70ff'],
+    }),
+
 #    ('', '', {
 #
 #    }),

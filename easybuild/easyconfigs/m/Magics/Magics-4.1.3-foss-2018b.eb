@@ -23,11 +23,10 @@ dependencies = [
     ('netCDF', '4.6.1'),
     ('Pango', '1.42.4'),
     ('expat', '2.2.5'),
-    ('ecCodes', '2.8.2'),
-    
+    ('ecCodes', '2.9.2'),    
 ]
 
-configopts = "CMAKE_BUILD_TYPE=Release -DECCODES_PATH=$EBROOTECCODES -DNETCDF_PATH=$EBROOTNETCDF -DBOOST_ROOT=$EBROOTBOOST -DPROJ4_PATH=$EBROOTPROJ"
+configopts = "-DECCODES_PATH=$EBROOTECCODES -DNETCDF_PATH=$EBROOTNETCDF -DBOOST_ROOT=$EBROOTBOOST -DPROJ4_PATH=$EBROOTPROJ "
 
 separate_build_dir = True
 

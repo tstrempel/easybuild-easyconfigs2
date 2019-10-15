@@ -240,6 +240,16 @@ exts_list = [
         'source_urls': ['https://pypi.python.org/packages/source/u/ujson'],
         'checksums': ['f66073e5506e91d204ab0c614a148d5aa938bdbf104751be66f8ad7a222f5f86'],
     }),
+
+    # installed for Magics
+    ('MarkupSafe', '1.1.1', {
+	'source_urls': ['https://pypi.python.org/packages/source/M/MarkupSafe'],
+        'checksums': ['717ba8fe3ae9cc0006d7c451f0bb265ee07739daf76355d06366154ee68d221e'],
+    }),
+    ('Jinja2', '2.10.3', {
+        'source_urls': ['https://pypi.python.org/packages/source/J/Jinja2'],
+        'checksums': ['74320bb91f31270f9551d46522e33af46a80c3d619f4a4bf42b3164d30b5911f'],
+    }),
 ]
 
 moduleclass = 'lang'

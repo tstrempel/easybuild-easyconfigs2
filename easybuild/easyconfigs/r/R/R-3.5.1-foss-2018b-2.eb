@@ -2137,6 +2137,10 @@ exts_list = [
         'checksums': ['f0d5f735e1b812612720845d79167a19f713a438fd10a6a3206e667045fd93e5'],
     }),
 
+############################################################################################
+#	added packages
+############################################################################################
+
     # install biomod2 and it's dependencies https://git.ufz.de/it/eve/software/issues/126
     ('plotmo', '3.5.5', {
         'checksums': ['ee0c779488dbd5844e50a8e9c753a1036a7e53ed18acea86bb41d869666cb771'],
@@ -2265,7 +2269,7 @@ exts_list = [
     ('StanHeaders', '2.18.1', {
         'checksums': ['ce0d609a7cd11725b1203bdeae92acc54da3a48b8266eb9dbdb9d95b14df9209'],
     }),
-    ('rstan', version, {
+    ('rstan', '2.18.2', {
         'checksums': ['4d75dad95610d5a1d1c89a4ddbaf4326462e4ffe0ad28aed2129f2d9292e70ff'],
     }),
 

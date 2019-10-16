@@ -6,7 +6,7 @@ version = "12.1.0.2.0"
 homepage = 'https://www.oracle.com/technetwork/database/database-technologies/instant-client/overview/index.html'
 description = """Free, light-weight, and easily installed Oracle Database tools, libraries and SDKs for building and connecting applications to an Oracle Database instance."""
 
-toolchain = {'name': 'dummy', 'version': ''}
+toolchain = SYSTEM
 
 sources = [
     'instantclient-basic-linux.x64-%(version)s.zip',

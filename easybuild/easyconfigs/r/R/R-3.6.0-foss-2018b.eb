@@ -2381,7 +2381,10 @@ exts_list = [
         'checksums': ['c4d099367fe183d285d583a0e8d92bad0b6445553ea9b0aefbd40b580491a1a5'],
     }),
 
-    # install RPostgreSQL
+    # install RPostgreSQL https://git.ufz.de/it/eve/software/issues/139
+    ('RPostgreSQL', '0.6-2', {
+        'checksums': ['080118647208bfa2621bcaac0d324891cc513e07618fa22e3c50ec2050e1b0d5'],
+    }),
 ]
 
 moduleclass = 'lang'

@@ -14,7 +14,7 @@ checksums = ['86e8176b0f89cc86a10f5c3e60c34140d591e9e6c85f129ccbfa13ecb16a9af2']
 
 builddependencies = [
     ('CMake', '3.12.1'),
-    ('Doxygen', '1.8.14'),
+    # ('Doxygen', '1.8.14'),
 ]
 
 dependencies = [
@@ -35,6 +35,7 @@ dependencies = [
     ('Cgl', '0.60.2'),
     ('Cbc', '2.10.3'),
     ('WildMagic', '5.17'),
+    ('X11', '20180604'),
 ]
 
 moduleclass = "bio"

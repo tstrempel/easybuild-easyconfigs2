@@ -2388,6 +2388,11 @@ exts_list = [
     ('RPostgreSQL', '0.6-2', {
         'checksums': ['080118647208bfa2621bcaac0d324891cc513e07618fa22e3c50ec2050e1b0d5'],
     }),
+
+    # install rgdal https://git.ufz.de/it/eve/software/issues/155
+    ('rgdal', '1.4-8', {
+	'checksums': ['5a0da53aedc9e1fc2ca9e5d04b6711d36c43e17e25d458b0fdf00d575548a6c9'],
+    }),
 ]
 
 moduleclass = 'lang'

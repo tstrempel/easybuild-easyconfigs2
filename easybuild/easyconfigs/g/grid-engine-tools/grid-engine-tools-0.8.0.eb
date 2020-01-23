@@ -14,7 +14,7 @@ checksums = ['84f681d5af16b0710c7c403314be559a78689303c488eb3d40fadc7f7e7b77af']
 
 dependencies = [
     ('Java', '1.8'),
-    ('uge/8.5.5-easybuild', EXTERNAL_MODULE),
+    ('uge', EXTERNAL_MODULE),
 ]
 
 buildininstalldir = False

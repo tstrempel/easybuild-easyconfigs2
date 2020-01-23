@@ -33,6 +33,8 @@ dependencies = [
     # ('OpenSSL', '1.1.1d'),
 ]
 
+modextravars = {'SSL_CERT_FILE': '/etc/ssl/certs/ca-bundle.crt'}
+
 osdependencies = [('openssl-devel', 'libssl-dev', 'libopenssl-devel')]
 
 # symlink 'pip' command to 'pip3' that is included with Python installation
@@ -258,15 +260,7 @@ exts_list = [
         'checksums': ['67045236dcfd6816dc439556d009594abf643e5eb48992e36beac09c2ca659b8'],
     }),
 
-    # installed for Magics
-    ('MarkupSafe', '1.1.1', {
-        'source_urls': ['https://pypi.python.org/packages/source/M/MarkupSafe'],
-        'checksums': ['717ba8fe3ae9cc0006d7c451f0bb265ee07739daf76355d06366154ee68d221e'],
-    }),
-    ('Jinja2', '2.10.3', {
-        'source_urls': ['https://pypi.python.org/packages/source/J/Jinja2'],
-        'checksums': ['74320bb91f31270f9551d46522e33af46a80c3d619f4a4bf42b3164d30b5911f'],
-    }),
+    # MarkupSafe and Jinja are already installed for Magics
 ]
 
 moduleclass = 'lang'

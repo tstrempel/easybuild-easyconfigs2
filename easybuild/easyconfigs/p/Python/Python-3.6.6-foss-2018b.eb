@@ -29,6 +29,8 @@ dependencies = [
     # ('OpenSSL', '1.1.0h'),
 ]
 
+# modextravars = {'SSL_CERT_FILE': '/etc/ssl/certs/ca-bundle.crt'}
+
 osdependencies = [('openssl-devel', 'libssl-dev', 'libopenssl-devel')]
 
 # Try to make sure stack limit is set to unlimited, to avoid compilation errors for hashlib with Intel compilers
@@ -244,11 +246,11 @@ exts_list = [
     # installed for Magics
     ('MarkupSafe', '1.1.1', {
 	'source_urls': ['https://pypi.python.org/packages/source/M/MarkupSafe'],
-        'checksums': ['717ba8fe3ae9cc0006d7c451f0bb265ee07739daf76355d06366154ee68d221e'],
+        'checksums': ['29872e92839765e546828bb7754a68c418d927cd064fd4708fab9fe9c8bb116b'],
     }),
     ('Jinja2', '2.10.3', {
         'source_urls': ['https://pypi.python.org/packages/source/J/Jinja2'],
-        'checksums': ['74320bb91f31270f9551d46522e33af46a80c3d619f4a4bf42b3164d30b5911f'],
+        'checksums': ['9fe95f19286cfefaa917656583d020be14e7859c6b0252588391e47db34527de'],
     }),
 ]
 

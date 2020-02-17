@@ -26,6 +26,8 @@ dependencies = [
     # ('OpenSSL', '1.1.0h'),
 ]
 
+modextravars = {'SSL_CERT_FILE': '/etc/ssl/certs/ca-bundle.crt'}
+
 osdependencies = [('openssl-devel', 'libssl-dev', 'libopenssl-devel')]
 
 exts_download_dep_fail = True
